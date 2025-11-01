@@ -97,7 +97,7 @@ const loadSongs = useCallback(async (mood) => {
   setSongs([]);
 
   try {
-    const res = await fetch(`http://localhost:3000/api/songs/${mood}`);
+    const res = await fetch(`https://zenify-1.onrender.com/api/songs/${mood}`);
     if (!res.ok) throw new Error("API error");
     const data = await res.json();
 
