@@ -263,7 +263,7 @@ const loadSongs = useCallback(async (mood) => {
         </motion.header>
 
         {/* Grid of mood selection buttons */}
-        <div className="grid gap-4 mb-16 grid-cols-[repeat(auto-fit,minmax(150px,1fr))]">
+        <div className="grid gap-4 mb-16 grid-cols-[repeat(auto-fit,minmax(110px,1fr))]">
           {moods.map((m, i) => {
             const isActive = currentMood === m;
             return (
